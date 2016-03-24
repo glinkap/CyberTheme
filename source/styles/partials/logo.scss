@@ -1,0 +1,15 @@
+.logo-cyberft-ink {
+	display: inline-block;
+	height: 80px;
+	width: 120px;
+	margin: 0;
+	background-image: url("../img/cyberft/logo_ink.png");
+	background-image: url("../img/cyberft/logo_ink.svg"), none;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.sidebar-left [class^="logo-"] {
+	width: 100%;
+	background-position-x: center;
+	margin: 20px 0 10px 0;
+}

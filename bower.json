@@ -1,0 +1,19 @@
+{
+  "name": "CyberTheme",
+  "version": "1.0.0",
+  "description": "Resources for cyberplat web applications.",
+  "homepage": "http://cyberplat.ru",
+  "authors": [
+    "Igor Ageyev <igor@ageyev.ru>"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6"
+  },
+  "dependencies": {
+    "jquery": "1",
+    "respond": "^1.4.2",
+    "html5shiv": "^3.7.3",
+    "prism": "^1.4.1"
+  }
+}

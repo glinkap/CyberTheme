@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'Cybericons';
+	src: url('#{$icon-font-path}#{$icon-font-name}.eot');
+	src: url('#{$icon-font-path}#{$icon-font-name}.eot?#iefix') format('embedded-opentype'),
+		url('#{$icon-font-path}#{$icon-font-name}.woff') format('woff'),
+		url('#{$icon-font-path}#{$icon-font-name}.ttf') format('truetype'),
+		url('#{$icon-font-path}#{$icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+}
+
+[class*="ic-"] {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Cybericons';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 24px;
+	margin: -6px 0 0 0;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.navbar-inverse [class*="ic-"] {
+	color: $brand-addon;
+	opacity: 0.7;
+}
+table [class*="ic-"] {
+	color: $brand-success;
+}
+
+// Individual icons
+.ic-user			{ &:before { content: "\e900"; } }
+.ic-menu			{ &:before { content: "\e901"; } }
+.ic-book			{ &:before { content: "\e902"; } }
+.ic-cog				{ &:before { content: "\e903"; } }
+.ic-edit			{ &:before { content: "\e904"; } }
+.ic-eye				{ &:before { content: "\e905"; } }
+.ic-plus			{ &:before { content: "\e906"; } }
+.ic-success		{ &:before { content: "\e907"; } }
+.ic-globus		{ &:before { content: "\e908"; } }
+.ic-lockoff		{ &:before { content: "\e909"; } }
+.ic-statistic	{ &:before { content: "\e90a"; } }
+.ic-key				{ &:before { content: "\e90b"; } }
+.ic-case			{ &:before { content: "\e90c"; } }
+.ic-download	{ &:before { content: "\e90d"; } }
+.ic-bank			{ &:before { content: "\e90e"; } }
+.ic-reload		{ &:before { content: "\e90f"; } }
+.ic-mail			{ &:before { content: "\e910"; } }
+.ic-report		{ &:before { content: "\e911"; } }
+.ic-folder		{ &:before { content: "\e912"; } }
+.ic-bin				{ &:before { content: "\e913"; } }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="flags" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="18px" viewBox="0 0 48 18" enable-background="new 0 0 48 18" xml:space="preserve">
+<g id="ru">
+	<rect fill="#FFFFFF" width="24" height="7.2"/>
+	<rect y="11" fill="#D52B1E" width="24" height="7"/>
+	<rect y="6" fill="#0039A6" width="24" height="6"/>
+</g>
+<g id="gb">
+	<rect x="24" fill="#00247D" width="24" height="18"/>
+	<polygon fill="#FFFFFF" points="24,17.012 36,11.013 31.975,9 24,12.987 	"/>
+	<polygon fill="#FFFFFF" points="48,12.987 40.025,9 36,11.013 48,17.012 	"/>
+	<polygon fill="#FFFFFF" points="24,5.013 31.975,9 36,6.988 24,0.988 	"/>
+	<polygon fill="#FFFFFF" points="48,0.988 36,6.988 40.025,9 48,5.013 	"/>
+	<polygon fill="#FFFFFF" points="24,6 24,12 33,12 33,18 39,18 39,12 48,12 48,6 39,6 39,0 33,0 33,6 	"/>
+	<path fill="#CF142B" d="M34,0v18h4V0H34z"/>
+	<rect x="24" y="7.2" fill="#CF142B" width="24" height="3.601"/>
+	<polygon fill="#CF142B" points="24,16.343 32.684,12 30,12 24,15.001 	"/>
+	<polygon fill="#CF142B" points="24,4.449 27,6 30,6 24,3.001 	"/>
+	<polygon fill="#CF142B" points="48,1.659 39.316,6 42.001,6 48,3.001 	"/>
+	<polygon fill="#CF142B" points="48,13.658 44.684,12 42.001,12 48,15.001 	"/>
+</g>
+</svg>
