@@ -1,15 +1,37 @@
-.logo-cyberft-ink {
+[class^="logo-"] {
 	display: inline-block;
-	height: 80px;
-	width: 120px;
-	margin: 0;
-	background-image: url("../img/cyberft/logo_ink.png");
-	background-image: url("../img/cyberft/logo_ink.svg"), none;
+	margin: 0 20px 0 0;
 	background-repeat: no-repeat;
 	background-position: left center;
+	vertical-align: middle;
 }
+.logo-cyberft {
+	height: 65px;
+	width: 103px;
+	background-image: url("../img/cyberft/logo.png");
+	background-image: url("../img/cyberft/logo.svg"), none;
+}
+.logo-cyberft-ink {
+	height: 80px;
+	width: 120px;
+	background-image: url("../img/cyberft/logo_ink.png");
+	background-image: url("../img/cyberft/logo_ink.svg"), none;
+}
+.logo-cyberplat {
+	height: 65px;
+	width: 103px;
+	background-image: url("../img/cyberplat/logo.png");
+	background-image: url("../img/cyberplat/logo.svg"), none;
+}
+.logo-cyberplat-ink {
+	height: 80px;
+	width: 120px;
+	background-image: url("../img/cyberplat/logo_ink.png");
+	background-image: url("../img/cyberplat/logo_ink.svg"), none;
+}
+
 .sidebar-left [class^="logo-"] {
 	width: 100%;
 	background-position-x: center;
-	margin: 20px 0 10px 0;
+	margin: 20px 0 15px 0;
 }
