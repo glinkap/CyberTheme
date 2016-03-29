@@ -65,11 +65,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Tables =====================================================================
-tr.danger, tr.success, tr.info {
+tr.danger, tr.success, tr.info, tr.warning {
 	color: #FFF;
+}
+tr.attention {
+	background-color: $brand-attention;
 }
 .table-hover td {
 	cursor: pointer;
+}
+.table>thead>tr:not(:first-child)>th {
+	vertical-align: middle;
+}
+
+.panel table, .well table {
+	background-color: #FFF;
 }
 
 // Forms ======================================================================
@@ -224,25 +234,32 @@ input[disabled], textarea[disabled] {
 }
 
 // Containers =================================================================
-.well {
-	padding: 20px 20px 0px 20px ;
-}
 .well blockquote {
 	border-color: $brand-attention;
 }
 
-.alert.alert-info, .alert.alert-info .alert-link,
+.alert-info, .alert-info .alert-link, .alert-warning, .alert-primary,
 .alert.alert-success, .alert.alert-success .alert-link,
 .alert.alert-danger, .alert.alert-danger .alert-link {
 	color: #FFF;
 }
 
-.alert.alert-warning {
-	color: #000;
+.alert {
+
+	h1,h2,h3,h4,h5,h6 {
+		color: inherit;
+		margin: 3px 0 3px 0;
+	}
 }
 
-.alert .close {
-	color: #FFF;
+.alert-attention {
+	background-color: $brand-attention;
+	border-color: darken($brand-attention, 15%);
+}
+
+.alert-primary {
+	background-color: $brand-primary;
+	border-color: darken($brand-primary, 10%);
 }
 
 .close {

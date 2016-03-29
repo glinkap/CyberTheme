@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Управление счетами</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="../assets/css/cybertheme.css" media="screen">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="../vendor/js/html5shiv.min.js"></script>
+	<script src="../vendor/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="left-sidebar">
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button id="toggle" class="navbar-toggle no-collapse pull-left" type="button">
+					<span class="ic-menu"></span>
+				</button>
+				<a href="./" class="navbar-brand">Терминал</a>
+				<p class="navbar-text">PLATRUMMAXXX</p>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="ic-lockoff"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="flag-ru"></span>Русский <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Русский</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							<span class="ic-lockoff"></span> admin@cyberft.com <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Администратор: редактировать</a></li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<!-- Sidebar-start -->
+		<div class="sidebar-left">
+
+			<a href="#" class="logo-cyberft-ink"></a>
+			<ul class="nav accordion" id="mainmenu">
+
+				<li><a href="#"><span class="ic-statistic"></span> Статистика</a></li>
+
+				<li><a href="#"><span class="ic-key"></span> Сертификаты</a></li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-case"></span> Документы</a>
+					<ul class="collapse">
+						<li><a href="#">Документы, ожидающие подпись</a></li>
+						<li><a href="#">Журнал документов</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-globus"></span> SwiftFin</a>
+					<ul class="collapse">
+						<li><a href="#">Журнал документов</a></li>
+						<li><a href="#">Входящие документы</a></li>
+						<li><a href="#">Исходящие документы</a></li>
+						<li><a href="#">Ошибочные документы</a></li>
+						<li><a href="#">Настройки</a></li>
+						<li><a href="#">Справочник SWIFT-кодов</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-download"></span> FinZip </a>
+					<ul class="collapse">
+						<li><a href="#">Журнал</a></li>
+					</ul>
+				</li>
+
+				<li class="active-trail"><a href="#" data-toggle="next"><span class="ic-bank"></span> Банковское обслуживание </a>
+					<ul class="collapse">
+						<li class="active-trail"><a class="active" href="#">Реестры платежных поручений</a></li>
+						<li><a href="#">Платежные поручения</a></li>
+						<li><a href="#">Выписки</a></li>
+						<li><a href="#">Справочник Банки</a></li>
+						<li><a href="#">Справочник Контрагенты</a></li>
+						<li><a href="#">Справочник Назначения Платежа</a></li>
+						<li><a href="#">Управление счетами</a></li>
+						<li><a href="#">Настройки</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-reload"></span> Обмен с внешней системой</a>
+					<ul class="collapse">
+						<li><a href="#">Журнал обмена</a></li>
+						<li><a href="#">Настройки</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-mail"></span> FileAct</a>
+					<ul class="collapse">
+						<li><a href="#">Журнал</a></li>
+						<li><a href="#">Настройки</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#"><span class="ic-user"></span> Пользователи</a></li>
+
+				<li><a href="#"><span class="ic-report"></span> Отчеты </a></li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-cog"></span> Настройки</a>
+					<ul class="collapse">
+						<li><a href="#">Контролёр</a></li>
+						<li><a href="#">Настройки автоподписания</a></li>
+						<li><a href="#">Обмен с сетью CyberFT</a></li>
+						<li><a href="#">Настройки подписания</a></li>
+						<li><a href="#">Безопасность</a></li>
+						<li><a href="#">Верификация входящих</a></li>
+						<li><a href="#">Ключи КриптоПро</a></li>
+						<li><a href="#">Настройки почтовых оповещений</a></li>
+						<li><a href="#">Список рассылки оповещений</a></li>
+						<li><a href="#">Журнал событий</a></li>
+						<li><a href="#">Параметры событий оповещения</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#" data-toggle="next"><span class="ic-book"></span> Помощь</a>
+					<ul class="collapse">
+						<li><a href="#">О системе</a></li>
+						<li><a href="#">Тур по системе</a></li>
+						<li><a href="#">Документация</a></li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+		<!-- Sidebar-end -->
+
+		<div class="content">
+
+			<!-- Content-start -->
+			<div class="container-fluid">
+				<div class="page-header bs-component">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="breadcrumb">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Банковское обслуживание</a></li>
+								<li class="active">Реестры платежных поручений</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row valign">
+						<div class="col-sm-12">
+							<h1>Реестры платежных поручений</h1>
+						</div>
+					</div>
+				</div>
+				<div class="well">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th width="3%"><a href="#?sort=id" class="sortable asc">ID</a></th>
+								<th width="6%">Плательщик</th>
+								<th width="4%">Счет</th>
+								<th width="4%"><a href="#?sort=status" class="sortable">Статус</a></th>
+								<th width="4%" class="text-right"><a href="#?sort=sum" class="sortable">Сумма</a></th>
+								<th width="3%" class="text-right"><a href="h#?sort=currency" class="sortable">Валюта</a></th>
+								<th width="3%" class="text-right">
+									<a href="#?sort=count" class="sortable">
+										<span class="hidden-xlg" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Поручений в реестре">ПР</span>
+										<span class="visible-xlg">Поручений в реестре</span>
+									</a>
+								</th>
+								<th width="3%" class="text-right">
+									<a href="#?sort=signaturesRequired" class="sortable">
+										<span class="hidden-xlg" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Необходимо подписей">НП</span>
+										<span class="visible-xlg">Необходимо подписей</span>
+									</a>
+								</th>
+								<th width="3%" class="text-right">
+									<a href="#?sort=signaturesCount" class="sortable">
+										<span class="hidden-xlg" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Количество подписей">КП</span>
+										<span class="visible-xlg">Количество подписей</span>
+									</a>
+								</th>
+								<th width="6%" class="text-right"><a href="#?sort=dateCreate" class="sortable">Дата создания</a></th>
+								<th width="6%" class="text-right"><a href="#?sort=dateUpdate" class="sortable">Дата изменения</a></th>
+								<th width="3%">&nbsp;</th>
+							</tr>
+							<tr id="w0-filters" class="filters">
+								<th></th>
+								<th><input type="text" id="paymentregistersearch-plat" name="PaymentRegisterSearch[plat]" class="form-control" ></th>
+								<th><input type="text" id="paymentregistersearch-bill" name="PaymentRegisterSearch[bill]" class="form-control" ></th>
+								<th>
+									<select id="paymentregistersearch-status" class="form-control" name="PaymentRegisterSearch[status]">
+										<option value=""></option>
+										<option value="exported">Экспортирован</option>
+										<option value="forSigning">Ожидает подписания</option>
+										<option value="signing">Подписание</option>
+										<option value="signed">Подписан</option>
+										<option value="accepted">Готов к отправке</option>
+										<option value="sent">Отправлено</option>
+										<option value="registered">Зарегистрировано</option>
+										<option value="delivered">Доставлено</option>
+										<option value="rejected">Отказано в обработке</option>
+									</select>
+								</th>
+								<th><input type="text" id="paymentregistersearch-sum" name="PaymentRegisterSearch[sum]" class="form-control" ></th>
+								<th><input type="text" id="paymentregistersearch-currency" name="PaymentRegisterSearch[currency]" class="form-control" ></th>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th><input type="text" id="paymentregistersearch-bill" name="PaymentRegisterSearch[bill]" class="form-control" ></th>
+								<th><input type="text" id="paymentregistersearch-bill" name="PaymentRegisterSearch[bill]" class="form-control" ></th>
+								<th class="text-right"><a href="#" title="Поиск"><span class="ic-glass"></span></a></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>62</td>
+								<td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: registered">Зарегистрировано</span></td>
+								<td class="text-right" nowrap="nowrap">817 268 372 171,12</td>
+								<td class="text-right">RUB</td><td class="text-right">4</td>
+								<td class="text-right">0</td><td class="text-right">0</td>
+								<td class="text-right">2016-02-03 19:07:04</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=62"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>61</td><td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: sent">Отправлено</span></td>
+								<td class="text-right" nowrap="nowrap">817 268 372 171,12</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">4</td>
+								<td class="text-right">1</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2016-02-03 18:55:22</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=61"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>60</td>
+								<td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: forSigning">Ожидает подписания</span></td>
+								<td class="text-right" nowrap="nowrap">8 888 854 555,00</td>
+								<td class="text-right">RUB</td><td class="text-right">1</td>
+								<td class="text-right">2</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2016-01-21 12:09:52</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=60"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>59</td>
+								<td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: forSigning">Ожидает подписания</span></td>
+								<td class="text-right" nowrap="nowrap">11,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2016-01-21 11:44:03</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=59"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>58</td>
+								<td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: forSigning">Ожидает подписания</span></td>
+								<td class="text-right" nowrap="nowrap">8 897 854 555,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">2</td>
+								<td class="text-right">2</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2016-01-20 12:22:54</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=58"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>57</td>
+								<td>ИНН 7735604604\773501001 ООО "Производственные технологии"</td>
+								<td>40702810800000003031</td>
+								<td><span title="Status: forSigning">Ожидает подписания</span></td>
+								<td class="text-right" nowrap="nowrap">10 000,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2016-01-13 16:07:37</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=57"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>56</td>
+								<td>ООО УК "Юнион Инвест Групп" Д.У. Рентным ЗПИФ "Карьер"</td>
+								<td>40701810300002000012</td>
+								<td><span title="Status: forSigning">Ожидает подписания</span></td>
+								<td class="text-right" nowrap="nowrap">2 474 086,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">2</td>
+								<td class="text-right">2</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2015-12-31 15:21:10</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=56"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>55</td>
+								<td>ООО УК "Юнион Инвест Групп" Д.У. Рентным ЗПИФ "Карьер"</td>
+								<td>40701810300002000012</td>
+								<td><span title="Status: forSigning">Ожидает подписания</span></td>
+								<td class="text-right" nowrap="nowrap">2 374 086,00</td>
+								<td class="text-right">RUB</td><td class="text-right">1</td>
+								<td class="text-right">2</td>
+								<td class="text-right">1</td>
+								<td class="text-right">2015-12-30 09:13:59</td>
+								<td class="text-right">0000-00-00 00:00:00</td>
+								<td class="text-right"><a href="#?id=55"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>54</td>
+								<td>ИНН 7735604604\773501001 ООО "Производственные технологии"</td>
+								<td>40817810501290000134</td>
+								<td><span title="Status: rejected">Отказано в обработке</span></td>
+								<td class="text-right" nowrap="nowrap">1 494,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">1</td>
+								<td class="text-right">0</td>
+								<td class="text-right">0</td>
+								<td class="text-right">2015-11-20 14:30:10</td>
+								<td class="text-right">2015-12-29 16:26:42</td>
+								<td class="text-right"><a href="#?id=54"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>53</td>
+								<td>ИНН 7735604604\773501001 ООО "Производственные технологии"</td>
+								<td>40817810501290000134</td>
+								<td><span title="Status: delivered">Доставлено</span></td>
+								<td class="text-right" nowrap="nowrap">1 494,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">1</td>
+								<td class="text-right">0</td>
+								<td class="text-right">0</td>
+								<td class="text-right">2015-11-20 14:28:02</td>
+								<td class="text-right">2015-12-29 16:26:41</td>
+								<td class="text-right"><a href="#?id=53"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>52</td>
+								<td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: rejected">Отказано в обработке</span></td>
+								<td class="text-right" nowrap="nowrap">100,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">1</td>
+								<td class="text-right">0</td>
+								<td class="text-right">0</td>
+								<td class="text-right">2015-11-13 16:14:00</td>
+								<td class="text-right">2015-11-13 16:16:01</td>
+								<td class="text-right"><a href="#?id=52"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>51</td>
+								<td>ИНН 7735604604\773501001 ООО "Производственные технологии"</td>
+								<td>40702810800000003031</td>
+								<td><span title="Status: rejected">Отказано в обработке</span></td>
+								<td class="text-right" nowrap="nowrap">1 494,00</td>
+								<td class="text-right">RUB</td><td class="text-right">1</td>
+								<td class="text-right">0</td><td class="text-right">0</td>
+								<td class="text-right">2015-11-11 11:07:51</td>
+								<td class="text-right">2015-11-11 11:09:44</td>
+								<td class="text-right"><a href="#?id=51"><span class="ic-eye"></span></a></td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>ИНН 6450013459 АО "Экономбанк"</td>
+								<td>30109810900000000330</td>
+								<td><span title="Status: rejected">Отказано в обработке</span></td>
+								<td class="text-right" nowrap="nowrap">1,00</td>
+								<td class="text-right">RUB</td>
+								<td class="text-right">1</td>
+								<td class="text-right">0</td>
+								<td class="text-right">0</td>
+								<td class="text-right">2015-11-09 18:36:37</td>
+								<td class="text-right">2015-11-09 18:38:04</td>
+								<td class="text-right"><a href="#?id=50"><span class="ic-eye"></span></a></td>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="pagination">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Content-end -->
+
+			<div class="footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="list-unstyled">
+								<li class="pull-right">© 1997-2016 <a href="http://cyberplat.ru">ООО «КИБЕРПЛАТ»</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="source-modal" class="modal fade">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Source Code</h4>
+				</div>
+				<div class="modal-body">
+					<pre><code class="language-markup"></code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="../vendor/js/jquery.min.js"></script>
+	<script src="../vendor/js/bootstrap.min.js"></script>
+	<script src="../assets/js/controls.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
+
+
+</body>
+</html>

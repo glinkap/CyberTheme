@@ -24,6 +24,16 @@
 .navbar-inverse [class*="ic-"] {
 	color: $brand-addon;
 	opacity: 0.7;
+
+}
+.media-left [class*="ic-"] {
+	font-size: 48px;
+	margin-right: 10px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.alert-attention [class*="ic-"] {
+	color: $brand-danger;
+	text-shadow: none;
 }
 table [class*="ic-"] {
 	color: $brand-success;
@@ -50,3 +60,7 @@ table [class*="ic-"] {
 .ic-report		{ &:before { content: "\e911"; } }
 .ic-folder		{ &:before { content: "\e912"; } }
 .ic-bin				{ &:before { content: "\e913"; } }
+.ic-glass			{ &:before { content: "\e914"; } }
+.ic-cross			{ &:before { content: "\e915"; } }
+.ic-send			{ &:before { content: "\e916"; } }
+.ic-attention	{ &:before { content: "\e917"; } }

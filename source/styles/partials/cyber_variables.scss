@@ -313,7 +313,7 @@ $screen-desktop:             $screen-md-min !default;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  1200px !default;
+$screen-lg:                  1300px !default;
 $screen-lg-min:              $screen-lg !default;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min !default;
@@ -505,20 +505,19 @@ $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
 
 $state-success-text:             #2B8F0E !default;
 $state-success-bg:               #2B8F0E !default;
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 7%) !default;
 
 $state-info-text:                #6697C4 !default;
 $state-info-bg:                  #6697C4 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 10%) !default;
 
 $state-warning-text:             #F15A24 !default;
-$state-warning-bg:               $brand-attention !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-bg:               $brand-warning !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 7%) !default;
 
 $state-danger-text:              #B72625 !default;
 $state-danger-bg:                #B72625 !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
-
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 7%) !default;
 
 //== Tooltips
 //
@@ -627,7 +626,7 @@ $modal-sm:                    300px !default;
 //
 //## Define alert colors, border radius, and padding.
 
-$alert-padding:               15px !default;
+$alert-padding:               20px !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
 
@@ -710,7 +709,7 @@ $list-group-link-heading-color: #333 !default;
 //##
 
 $panel-bg:                    #fff !default;
-$panel-body-padding:          20px 20px 0px 20px  !default;
+$panel-body-padding:          20px  !default;
 $panel-heading-padding:       10px 15px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
