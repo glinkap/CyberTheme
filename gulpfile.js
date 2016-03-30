@@ -76,6 +76,7 @@ gulp.task('vendor', ['vendor:css'], function() {
 		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 		'./bower_components/jquery/dist/jquery.min.js',
 		'./bower_components/prism/prism.js',
+		'./bower_components/clipboard/dist/clipboard.min.js',
 		'./bower_components/html5shiv/dist/html5shiv.min.js',
 		'./bower_components/respond/dest/respond.min.js'
 	])

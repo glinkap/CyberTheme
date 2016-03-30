@@ -8,7 +8,8 @@
   ],
   "license": "UNLICENSED",
   "devDependencies": {
-    "bootstrap-sass": "bootstrap-sass-official#^3.3.6"
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "clipboard": "^1.5.9"
   },
   "dependencies": {
     "jquery": "1",

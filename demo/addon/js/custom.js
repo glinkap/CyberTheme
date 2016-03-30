@@ -44,4 +44,13 @@
 		return lines;
 	}
 
+	var clipboard = new Clipboard('#icons a', {
+		text: function(trigger) {
+			//var result = trigger.innerHTML.replace(/\s{2,}/g, '');
+			var result = trigger.innerHTML.match(/<span class="\S*"><\/span>/);
+			return result;
+		}
+	});
+
+
 })();

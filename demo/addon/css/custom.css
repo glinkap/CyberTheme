@@ -28,7 +28,7 @@ body>.navbar {
 	margin-top: 1em
 }
 .bs-docs-section {
-	padding-top: 6em;
+	padding-top: 3em;
 }
 .bs-component {
 	position: relative
@@ -174,22 +174,17 @@ footer p {
 	}
 }
 
-.bs-glyphicons li {
-	float: left;
-	width: 25%;
-	padding: 10px;
-	font-size: 14px;
-	line-height: 1.4;
-	text-align: center;
-	background-color: #f9f9f9;
-	border: 2px solid #eee;
-	list-style: none;
+.bs-glyphicons a:active {
+	background-color: #00529C;
+	color: #fff;
+	transition: all 0.2s linear 0s;
+}
+.bs-glyphicons a:active [class*="ic-"] {
+	color: #fff;
+	transition: all 0.2s linear 0s;
 }
 .bs-glyphicons [class*="ic-"] {
-	margin-top: 5px;
-	margin-bottom: 10px;
-	font-size: 24px;
-	font-size: 32px;
+	margin: 0px 10px 5px 0px;
 	color: #2B8F0E;
 }
 .bs-glyphicons {
