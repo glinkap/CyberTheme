@@ -1,311 +1,303 @@
 body {
-	padding-top: 50px
+  padding-top: 50px;
 }
-
 // Navbar =====================================================================
 .no-collapse {
-	display: inline-block;
+  display: inline-block;
 }
 .navbar-toggle {
-	margin: 0px;
-	padding: 14px 10px;
+  margin: 0;
+  padding: 14px 10px;
 }
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: 0px;
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
 }
-
-
 // Buttons ====================================================================
 .btn-group.btn-group-justified > .btn:last-child {
-	border-left: none;
+  border-left: none;
 }
 .btn-group.btn-group-justified > .btn:first-child {
-	border-right: none;
+  border-right: none;
 }
 .navbar-inverse .btn-default {
-	background-color: $brand-primary;
-	border-color: lighten($brand-primary, 60%);
-	color: lighten($brand-primary, 60%);
+  background-color: $brand-primary;
+  border-color: lighten($brand-primary, 60%);
+  color: lighten($brand-primary, 60%);
 }
 .navbar-inverse .btn-default:hover {
-	background-color: darken($brand-primary, 10%);
-	border-color: darken($brand-primary, 10%);
-	color: #FFF;
+  background-color: darken($brand-primary, 10%);
+  border-color: darken($brand-primary, 10%);
+  color: #FFF;
 }
 .btn {
-	transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
 }
-.btn:focus, .btn:active:focus, .btn.active:focus, button:focus {
-	outline:none;
-	box-shadow:none;
-
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
 }
-
-
 // Typography =================================================================
-
 .page-header {
-	padding-bottom: 0;
-	margin-top: 32px;
+  padding-bottom: 0;
+  margin-top: 32px;
 }
 // .page-header .pull-right {
 // 	margin-top: 5px;
 // }
 .page-header h1 {
-	display: inline-block;
-	margin: 0 0 -1px 0;
-	padding: 10px 0;
-	border-bottom: solid 2px $brand-success;
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 10px 0;
+  border-bottom: solid 2px $brand-success;
 }
 .page-header .lead {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-	color: $gray;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gray;
 }
-
 // Tables =====================================================================
-tr.danger, tr.success, tr.info, tr.warning {
-	color: #FFF;
+tr.danger,
+tr.info,
+tr.success,
+tr.warning {
+  color: #FFF;
 }
 tr.attention {
-	background-color: $brand-attention;
+  background-color: $brand-attention;
 }
 .table-hover td {
-	cursor: pointer;
+  cursor: pointer;
 }
-.table>thead>tr:not(:first-child)>th {
-	vertical-align: middle;
+.table > thead > tr:not(:first-child) > th {
+  vertical-align: middle;
 }
-
-.panel table, .well table {
-	background-color: #FFF;
+.panel table,
+.well table {
+  background-color: #FFF;
 }
-
 // Forms ======================================================================
 .input-lg {
-	// border: solid 2px $brand-primary;
-	border-width: 2px;
+  // border: solid 2px $brand-primary;
+  border-width: 2px;
 }
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
+.uneditable- input:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
 input[type="email"]:focus,
-input[type="url"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable- input:focus,
-textarea:focus  {
-	border-color: $brand-success;
-	outline: none;
-	box-shadow:none !important;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+textarea:focus,
+textarea:focus {
+  border-color: $brand-success;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
-input[disabled], textarea[disabled] {
-	border-color: #9AA6AB;
+input[disabled],
+textarea[disabled] {
+  border-color: #9AA6AB;
 }
-
 .navbar-inverse .form-control,
 .navbar-inverse .form-control:focus {
-	border-color: #fff;
-	box-shadow: none;
-	-webkit-box-shadow: none;
+  border-color: #fff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
-
-
 // Navs =======================================================================
 .list-group-item {
-	border-style: dotted none none none;
+  border-style: dotted none none none;
 }
 .navbar-text {
-	display: inline-block;
-	margin-top: 16px;
-	margin-bottom: 14px;
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 14px;
 }
 .navbar-inverse .navbar-text {
-	color: #FFF;
+  color: #FFF;
 }
 .navbar-inverse .navbar-brand + .navbar-text {
-	margin-left: 0;
-	padding-left: 10px;
-	border-left: solid 1px $brand-addon;
+  margin-left: 0;
+  padding-left: 10px;
+  border-left: solid 1px $brand-addon;
 }
 @media (min-width: 768px) {
-	.navbar-fixed-top .container-fluid > .navbar-header {
-		margin-right: 10px;
-		margin-left: -10px;
-	}
+  .navbar-fixed-top .container-fluid > .navbar-header {
+    margin-right: 10px;
+    margin-left: -10px;
+  }
 }
-
 .accordion ul {
-	padding: 0;
+  padding: 0;
 }
 .accordion li a {
-	border-top: dotted 1px $gray;
+  border-top: dotted 1px $gray;
 }
 .accordion li ul a {
-	padding-left: 45px;
+  padding-left: 45px;
 }
 .accordion a {
-	position: relative;
-	display: block;
-	padding: 10px 5px;
-	background-color: transparent;
-	color: $gray-base;
+  position: relative;
+  display: block;
+  padding: 10px 5px;
+  background-color: transparent;
+  color: $gray-base;
 }
 .accordion li a {
-	padding: 10px 10px;
+  padding: 10px;
 }
 .accordion a:hover {
-	text-decoration: none;
-	background-color: #f1f1f1;
+  text-decoration: none;
+  background-color: #f1f1f1;
 }
 .accordion li {
-	list-style: none;
+  list-style: none;
 }
 .list-group a:hover {
-	text-decoration: none;
-	background-color: #f1f1f1;
+  text-decoration: none;
+  background-color: #f1f1f1;
 }
-
-.accordion [data-toggle="next"]:after
-{
-	content: '';
-	display: inline-block;
-	width: 0;
-	height: 0;
-	margin-left: 2px;
-	vertical-align: middle;
-	border-top: 4px dashed;
-	border-top: 4px solid \9;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-	float: right;
-	margin: 8px 0;
+.accordion [data-toggle="next"]:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  float: right;
+  margin: 8px 0;
 }
-.accordion [data-toggle="next"].collapsed:after
-{
-	-webkit-transform: rotate(180deg);
-	-moz-transform:    rotate(180deg);
-	-ms-transform:     rotate(180deg);
-	-o-transform:      rotate(180deg);
-	transform:         rotate(180deg);
+.accordion [data-toggle="next"].collapsed:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
-.accordion .active-trail > a, .accordion .active-trail > a:hover, .accordion .active-trail > a:focus {
-	background-color: $brand-info;
-	color: #FFF;
+.accordion .active-trail > a,
+.accordion .active-trail > a:focus,
+.accordion .active-trail > a:hover {
+  background-color: $brand-info;
+  color: #FFF;
 }
 .accordion .active-trail [class*="ic-"] {
-	color: #FFF;
+  color: #FFF;
 }
-
 .accordion li ul .active-trail > a,
-.accordion li ul .active-trail > a:hover,
-.accordion li ul .active-trail > a:focus {
-	background-color: $gray-lighter;
-	color: $gray-base;
+.accordion li ul .active-trail > a:focus,
+.accordion li ul .active-trail > a:hover {
+  background-color: $gray-lighter;
+  color: $gray-base;
 }
-
 .accordion [class*="ic-"] {
-	color: $brand-success;
-	margin-right: 8px;
+  color: $brand-success;
+  margin-right: 8px;
 }
-
-
-
-
 // Indicators =================================================================
-
 // Progress bars ==============================================================
 .progress {
-	height: 10px;
-	@include box-shadow(none);
+  height: 10px;
+  @include box-shadow(none);
 }
-
 // Containers =================================================================
 .well blockquote {
-	border-color: $brand-attention;
+  border-color: $brand-attention;
 }
-
-.alert-info, .alert-info .alert-link, .alert-warning, .alert-primary,
-.alert.alert-success, .alert.alert-success .alert-link,
-.alert.alert-danger, .alert.alert-danger .alert-link {
-	color: #FFF;
+.alert-info,
+.alert-info .alert-link,
+.alert-primary,
+.alert-warning,
+.alert.alert-danger,
+.alert.alert-danger .alert-link,
+.alert.alert-success,
+.alert.alert-success .alert-link {
+  color: #FFF;
 }
-
 .alert {
-
-	h1,h2,h3,h4,h5,h6 {
-		color: inherit;
-		margin: 3px 0 3px 0;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: inherit;
+    margin: 3px 0;
+  }
 }
-
 .alert-attention {
-	background-color: $brand-attention;
-	border-color: darken($brand-attention, 15%);
+  background-color: $brand-attention;
+  border-color: darken($brand-attention, 15%);
 }
-
 .alert-primary {
-	background-color: $brand-primary;
-	border-color: darken($brand-primary, 10%);
+  background-color: $brand-primary;
+  border-color: darken($brand-primary, 10%);
 }
-
 .close {
-	font-size: 28px;
-	opacity: 0.6;
+  font-size: 28px;
+  opacity: 0.6;
 }
 .alert-dismissible .close {
-	top: -10px;
-	right: -26px;
+  top: -10px;
+  right: -26px;
 }
-.close:hover, .close:focus {
-	opacity: 1;
+.close:focus,
+.close:hover {
+  opacity: 1;
 }
-
-.content .container-fluid, .sidebar .container-fluid, .content .container {
-	padding-left: 20px;
-	padding-right: 20px;
+.content .container,
+.content .container-fluid,
+.sidebar .container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.panel, .well {
-	-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+.panel,
+.well {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 }
 .panel {
-	border: none;
+  border: none;
 }
-.panel-success > .panel-heading,
 .panel-danger > .panel-heading,
-.panel-info > .panel-heading {
-	color: #FFF;
+.panel-info > .panel-heading,
+.panel-success > .panel-heading {
+  color: #FFF;
 }
-
-
 .valign {
-	font-size: 0;
+  font-size: 0;
 }
-
 .valign > [class*="col"] {
-	display: inline-block;
-	float: none;
-	font-size: 14px;
-	font-size: 1rem;
-	vertical-align: middle;
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  font-size: 1rem;
+  vertical-align: middle;
 }
 .valign .alert {
-	font-size: 14px;
-	margin-bottom: 0;
+  font-size: 14px;
+  margin-bottom: 0;
 }

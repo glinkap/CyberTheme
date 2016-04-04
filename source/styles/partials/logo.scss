@@ -1,35 +1,32 @@
 [class^="logo-"] {
-	display: inline-block;
-	margin: 0 20px 0 0;
-	background-repeat: no-repeat;
-	background-position: left center;
-	vertical-align: middle;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  background-repeat: no-repeat;
+  background-position: left center;
+  vertical-align: middle;
 }
 .logo-cyberft {
-	height: 65px;
-	width: 103px;
-	background-image: url("../img/cyberft/logo.svg");
+  height: 65px;
+  width: 103px;
+  background-image: url("../img/cyberft/logo.svg");
 }
-
 .logo-cyberft-ink {
-	height: 80px;
-	width: 120px;
-	background-image: url("../img/cyberft/logo_ink.svg");
+  height: 80px;
+  width: 120px;
+  background-image: url("../img/cyberft/logo_ink.svg");
 }
-
 .logo-cyberplat {
-	height: 65px;
-	width: 103px;
-	background-image: url("../img/cyberplat/logo.svg");
+  height: 65px;
+  width: 103px;
+  background-image: url("../img/cyberplat/logo.svg");
 }
 .logo-cyberplat-ink {
-	height: 80px;
-	width: 120px;
-	background-image: url("../img/cyberplat/logo_ink.svg");
+  height: 80px;
+  width: 120px;
+  background-image: url("../img/cyberplat/logo_ink.svg");
 }
-
 .sidebar-left [class^="logo-"] {
-	width: 100%;
-	background-position-x: center;
-	margin: 20px 0 15px 0;
+  width: 100%;
+  background-position-x: center;
+  margin: 20px 0 15px;
 }

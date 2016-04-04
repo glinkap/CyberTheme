@@ -1,86 +1,70 @@
 /* Toggle Styles */
 $sidebar-width: 300px;
-
 #toggle {
-	display: none;
-	vertical-align: initial;
+  display: none;
+  vertical-align: initial;
 }
 .left-sidebar #toggle {
-	display: inline-block;
+  display: inline-block;
 }
-
 .wrapper {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-
 .left-sidebar .wrapper {
-	padding-left: $sidebar-width;
+  padding-left: $sidebar-width;
 }
-
 .left-sidebar .wrapper.toggled {
-	padding-left: 0;
+  padding-left: 0;
 }
-
 .sidebar-left {
-	display: none;
+  display: none;
 }
-
 .left-sidebar .sidebar-left {
-	display: block;
-	z-index: 1000;
-	position: fixed;
-	left: $sidebar-width;
-	width: $sidebar-width;
-	height: 100%;
-	margin-left: -$sidebar-width;
-	overflow-y: auto;
-	background: #FFF;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	padding-bottom: 50px;
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  left: $sidebar-width;
+  width: $sidebar-width;
+  height: 100%;
+  margin-left: -$sidebar-width;
+  overflow-y: auto;
+  background: #FFF;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-bottom: 50px;
 }
-
 .left-sidebar .wrapper.toggled .sidebar-left {
-	left: 0;
+  left: 0;
 }
-
 .content {
-	width: 100%;
-	position: absolute;
-	padding: 0px;
+  width: 100%;
+  position: absolute;
+  padding: 0;
 }
-
 .left-sidebar .wrapper.toggled .content {
-	position: absolute;
-	margin-right: -$sidebar-width;
+  position: absolute;
+  margin-right: -$sidebar-width;
 }
-
 @media(min-width:768px) {
-	.left-sidebar .wrapper {
-		padding-left: $sidebar-width;
-	}
-
-	.left-sidebar .wrapper.toggled {
-		padding-left: 0;
-	}
-
-	.left-sidebar .sidebar-left {
-		width: $sidebar-width;
-	}
-
-	.left-sidebar .wrapper.toggled .sidebar-left {
-		left: 0;
-	}
-
-	.content {
-		padding: 0px;
-		position: relative;
-	}
-
-
+  .left-sidebar .wrapper {
+    padding-left: $sidebar-width;
+  }
+  .left-sidebar .wrapper.toggled {
+    padding-left: 0;
+  }
+  .left-sidebar .sidebar-left {
+    width: $sidebar-width;
+  }
+  .left-sidebar .wrapper.toggled .sidebar-left {
+    left: 0;
+  }
+  .content {
+    padding: 0;
+    position: relative;
+  }
 }

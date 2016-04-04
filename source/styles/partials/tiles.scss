@@ -1,20 +1,33 @@
 [class^="tile-"] {
   width: 100%;
-	display: inline-block;
-	box-sizing: border-box;
-	background: #000;
-	color: #FFF;
-	padding: 20px;
-	margin-bottom: 22px;
-
-	h1,h2,h3,h4,h5,h6 {
-		color: #FFF;
-		margin-top: 5px;
-	}
+  display: inline-block;
+  box-sizing: border-box;
+  background: #000;
+  color: #FFF;
+  padding: 20px;
+  margin-bottom: 22px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #FFF;
+    margin-top: 5px;
+  }
 }
-
-.tile-primary { background-color: $brand-primary; }
-.tile-success { background-color: $brand-success; }
-.tile-info { background-color: $brand-info; }
-.tile-warning { background-color: $brand-warning; }
-.tile-danger { background-color: $brand-danger; }
+.tile-primary {
+  background-color: $brand-primary;
+}
+.tile-success {
+  background-color: $brand-success;
+}
+.tile-info {
+  background-color: $brand-info;
+}
+.tile-warning {
+  background-color: $brand-warning;
+}
+.tile-danger {
+  background-color: $brand-danger;
+}

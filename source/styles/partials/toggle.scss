@@ -1,47 +1,55 @@
 .sortable {
-	display: inline-block;
-	position: relative;
-	padding-right: 15px;
-	color: inherit;
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  color: inherit;
 }
 .sortable:after {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 0;
-	height: 0;
-	vertical-align: middle;
-	border-top: 4px dashed;
-	border-top: 4px solid \9;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-	right: 0px;
-	bottom: 0px;
-	margin: 8px 0;
-	color: $gray-light;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 8px 0;
+  content: '';
+  vertical-align: middle;
+  color: $gray-light;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 .sortable.desc:after {
-	color: $brand-warning;
+  color: $brand-warning;
 }
-
 .sortable.asc:after {
-	color: $brand-warning;
-	-webkit-transform: rotate(180deg);
-	-moz-transform:    rotate(180deg);
-	-ms-transform:     rotate(180deg);
-	-o-transform:      rotate(180deg);
-	transform:         rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: $brand-warning;
 }
-
-.hidden-xlg, .visible-xlg { display: none; }
-
+.hidden-xlg,
+.visible-xlg {
+  display: none;
+}
 @media (min-width: 1680px) {
-	.visible-xlg { display: inline; }
+  .visible-xlg {
+    display: inline;
+  }
 }
 @media (max-width: 1679px) {
-	.hidden-xlg { display: inline; }
+  .hidden-xlg {
+    display: inline;
+  }
 }
 @media (max-width: 1679px) and (min-width: 1330px) {
-	.wrapper.toggled .visible-xlg { display: inline; }
-	.wrapper.toggled .hidden-xlg { display: none; }
+  .wrapper.toggled .visible-xlg {
+    display: inline;
+  }
+  .wrapper.toggled .hidden-xlg {
+    display: none;
+  }
 }
