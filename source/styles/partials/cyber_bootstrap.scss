@@ -126,6 +126,7 @@ textarea[disabled] {
 // Navs =======================================================================
 .list-group-item {
   border-style: dotted none none none;
+  border-color: $gray;
 }
 .navbar-text {
   display: inline-block;
@@ -229,7 +230,9 @@ textarea[disabled] {
 .alert-info,
 .alert-info .alert-link,
 .alert-primary,
+.alert-primary .alert-link,
 .alert-warning,
+.alert-warning .alert-link,
 .alert.alert-danger,
 .alert.alert-danger .alert-link,
 .alert.alert-success,
@@ -255,17 +258,35 @@ textarea[disabled] {
   background-color: $brand-primary;
   border-color: darken($brand-primary, 10%);
 }
+
+.modal-header {
+  margin: 10px 15px 0px 15px;
+  padding: 0 0 10px 0;
+}
+
+.modal-footer {
+	margin: 0px 15px 15px 15px;
+	padding: 15px 0 0 0;
+}
+
+.modal-header .close {
+  margin: 3px -3px 0 0;
+}
+
 .close {
-  font-size: 28px;
+  font-size: 24px;
   opacity: 0.6;
 }
 .alert-dismissible .close {
-  top: -10px;
-  right: -26px;
+  top: -7px;
+  right: -32px;
 }
 .close:focus,
 .close:hover {
   opacity: 1;
+}
+.alert-dismissible .close:hover, .alert-dismissible .close:focus {
+  color: #FFF;
 }
 .content .container,
 .content .container-fluid,
@@ -284,7 +305,8 @@ textarea[disabled] {
 }
 .panel-danger > .panel-heading,
 .panel-info > .panel-heading,
-.panel-success > .panel-heading {
+.panel-success > .panel-heading,
+.panel-warning > .panel-heading {
   color: #FFF;
 }
 .valign {
