@@ -224,8 +224,9 @@ textarea[disabled] {
   @include box-shadow(none);
 }
 // Containers =================================================================
-.well blockquote {
+ .well blockquote, .panel blockquote {
   border-color: $brand-attention;
+  border-width: 2px;
 }
 .alert-info,
 .alert-info .alert-link,
@@ -258,28 +259,29 @@ textarea[disabled] {
   background-color: $brand-primary;
   border-color: darken($brand-primary, 10%);
 }
-
 .modal-header {
   margin: 10px 15px 0px 15px;
   padding: 0 0 10px 0;
 }
-
 .modal-footer {
 	margin: 0px 15px 15px 15px;
 	padding: 15px 0 0 0;
 }
-
 .modal-header .close {
   margin: 3px -3px 0 0;
 }
-
 .close {
   font-size: 24px;
   opacity: 0.6;
 }
+
 .alert-dismissible .close {
   top: -7px;
   right: -32px;
+  font-size: 0;
+}
+.close:before {
+  font-size: 24px;
 }
 .close:focus,
 .close:hover {

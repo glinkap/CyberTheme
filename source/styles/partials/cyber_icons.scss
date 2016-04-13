@@ -3,7 +3,7 @@
   src: url('#{$icon-font-path}#{$icon-font-name}.eot');
   src: url('#{$icon-font-path}#{$icon-font-name}.eot?#iefix') format('embedded-opentype'), url('#{$icon-font-path}#{$icon-font-name}.woff') format('woff'), url('#{$icon-font-path}#{$icon-font-name}.ttf') format('truetype'), url('#{$icon-font-path}#{$icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
 }
-[class*="ic-"], .close {
+[class*="ic-"], [class*="glyphicon-"], .close {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -30,7 +30,7 @@
   color: $brand-danger;
   text-shadow: none;
 }
-table [class*="ic-"] {
+table [class*="ic-"], table [class*="glyphicon-"] {
   color: $brand-success;
 }
 // Individual icons
@@ -54,12 +54,12 @@ table [class*="ic-"] {
     content: "\e903";
   }
 }
-.ic-edit {
+.ic-edit, .glyphicon-pencil {
   &:before {
     content: "\e904";
   }
 }
-.ic-eye {
+.ic-eye, .glyphicon-eye-open {
   &:before {
     content: "\e905";
   }
@@ -129,7 +129,7 @@ table [class*="ic-"] {
     content: "\e912";
   }
 }
-.ic-bin {
+.ic-bin, .glyphicon-trash {
   &:before {
     content: "\e913";
   }
@@ -139,7 +139,7 @@ table [class*="ic-"] {
     content: "\e914";
   }
 }
-.ic-cross, .close {
+.ic-cross, .close, .glyphicon-remove {
   &:before {
     content: "\e915";
   }
@@ -152,5 +152,10 @@ table [class*="ic-"] {
 .ic-attention {
   &:before {
     content: "\e917";
+  }
+}
+.ic-calendar, .glyphicon-calendar {
+  &:before {
+    content: " ";
   }
 }
