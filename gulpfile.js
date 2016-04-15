@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   svg2png = require('gulp-svg2png'),
   svgmin = require('gulp-svgmin'),
   changed = require('gulp-changed'),
-  connect = require('gulp-connect');
+  connect = require('gulp-connect'),
+  rename = require('gulp-rename');
 
 /*
  * Запуск вебсервера
@@ -26,13 +27,19 @@ gulp.task('html', function() {
 /*
  * Генерируем стилевые файлы
  */
-gulp.task('style', function() {
-  gulp.src('./source/styles/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
+gulp.task('style', ['style:build'], function() {
+  gulp.src(['./assets/css/*.css', '!./assets/css/*.min.css'])
     .pipe(csso())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./assets/css/'))
     .pipe(connect.reload());
+});
+
+gulp.task('style:build', function() {
+  return gulp.src('./source/styles/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./assets/css/'));
 });
 
 /*
@@ -44,7 +51,7 @@ gulp.task('font', ['font:build'], function() {
 });
 
 gulp.task('font:build', function() {
-  return gulp.src('./source/fonts/*.ttf')
+  return gulp.src('./source/fonts/**/*.ttf')
     .pipe(fontmin())
     .pipe(gulp.dest('./assets/fonts/'));
 });

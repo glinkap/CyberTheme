@@ -190,9 +190,3 @@ footer p {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 768px) {
-  .bs-glyphicons li {
-    font-size: 14px;
-    width: 12.5%;
-  }
-}
