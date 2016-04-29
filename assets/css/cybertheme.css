@@ -3463,17 +3463,17 @@ a.badge:hover, a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #e6e6e6; }
+  color: #cfe8ff;
+  background-color: #00529C; }
   .jumbotron h1,
   .jumbotron .h1 {
-    color: inherit; }
+    color: #FFF; }
   .jumbotron p {
     margin-bottom: 15px;
     font-size: 21px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #cccccc; }
+    border-top-color: #003769; }
   .container .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 3px;
@@ -5092,10 +5092,11 @@ table [class*="ic-"], table [class*="glyphicon-"] {
 
 .wrapper {
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; }
 
 .left-sidebar .wrapper {
-  padding-left: 85%; }
+  padding-left: 300px; }
 
 .left-sidebar .wrapper.toggled {
   padding-left: 0; }
@@ -5107,14 +5108,15 @@ table [class*="ic-"], table [class*="glyphicon-"] {
   display: block;
   z-index: 1000;
   position: fixed;
-  left: 85%;
-  width: 85%;
+  width: 300px;
+  left: 300px;
+  margin-left: -300px;
   height: 100%;
-  margin-left: -85%;
   overflow-y: auto;
   background: #FFF;
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   padding-bottom: 50px; }
 
 .left-sidebar .wrapper.toggled .sidebar-left {
@@ -5122,30 +5124,27 @@ table [class*="ic-"], table [class*="glyphicon-"] {
 
 .content {
   width: 100%;
-  position: absolute;
+  position: relative;
   padding: 0; }
 
 .left-sidebar .wrapper.toggled .content {
-  position: absolute;
-  margin-right: -85%; }
+  position: relative;
+  margin-right: 0; }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .left-sidebar .wrapper {
-    padding-left: 300px; }
+    padding-left: 85%; }
   .left-sidebar .wrapper.toggled {
     padding-left: 0; }
   .left-sidebar .sidebar-left {
-    width: 300px;
-    left: 300px;
-    margin-left: -300px; }
-  .left-sidebar .wrapper.toggled .sidebar-left {
-    left: 0; }
+    left: 85%;
+    width: 85%;
+    margin-left: -85%; }
   .content {
-    padding: 0;
-    position: relative; }
+    position: absolute; }
   .left-sidebar .wrapper.toggled .content {
-    position: relative;
-    margin-right: 0; } }
+    position: absolute;
+    margin-right: -85%; } }
 
 body {
   padding-top: 50px; }
@@ -5228,10 +5227,11 @@ tr.attention {
 .well table {
   background-color: #FFF; }
 
-.input-lg, .input-group-lg > .form-control,
+.form-group-lg .form-control, .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  border-width: 2px; }
+  border-width: 2px;
+  height: 45px; }
 
 .uneditable- input:focus,
 input[type="color"]:focus,

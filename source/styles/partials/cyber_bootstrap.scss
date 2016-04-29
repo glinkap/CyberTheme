@@ -86,9 +86,10 @@ tr.attention {
   background-color: #FFF;
 }
 // Forms ======================================================================
-.input-lg {
+.form-group-lg .form-control, .input-lg {
   // border: solid 2px $brand-primary;
   border-width: 2px;
+  height: 45px;
 }
 .uneditable- input:focus,
 input[type="color"]:focus,
