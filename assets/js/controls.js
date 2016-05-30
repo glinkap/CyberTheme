@@ -1,4 +1,4 @@
-(function() {
+(function($, window, document, undefined) {
   // Burger menu Toggle Script
   $("#toggle").click(function(e) {
     e.preventDefault();
@@ -17,4 +17,4 @@
     $(this).next().collapse('toggle');
   });
 
-})();
+}(jQuery, window, document));

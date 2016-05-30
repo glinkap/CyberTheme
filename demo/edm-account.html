@@ -174,6 +174,54 @@
           </div>
         </div>
         <div class="well">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#filters" aria-expanded="true" aria-controls="collapseOne">
+                    Фильтры
+                  </a>
+                </h4>
+              </div>
+              <div id="filters" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="col-md-2 control-label">Cчет</label>
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" name="EdmAccount[number]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label">Название</label>
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" name="EdmAccount[title]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label">Остаток</label>
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" name="EdmAccount[balance]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-md-2 control-label">Валюта</label>
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" name="EdmAccount[currency]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-info">Применить фильтр</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <table class="table table-striped table-hover">
             <thead>
               <tr>
@@ -183,22 +231,6 @@
                 <th width="10%" class="text-right"><a href="#" class="sortable">Остаток</a></th>
                 <th width="10%" class="text-right"><a href="#" class="sortable">Валюта</a></th>
                 <th width="8%"> </th>
-              </tr>
-              <tr>
-                <th> </th>
-                <th>
-                  <input type="text" class="form-control" name="EdmAccount[number]">
-                </th>
-                <th>
-                  <input type="text" class="form-control" name="EdmAccount[title]">
-                </th>
-                <th>
-                  <input type="text" class="form-control" name="EdmAccount[balance]">
-                </th>
-                <th>
-                  <input type="text" class="form-control" name="EdmAccount[currency]">
-                </th>
-                <th class="text-right"><a href="#" title="Поиск"><span class="ic-glass"></span></a></th>
               </tr>
             </thead>
             <tbody>

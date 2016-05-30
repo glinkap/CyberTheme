@@ -53,21 +53,21 @@ $sidebar-width: 300px;
 }
 @media(max-width:768px) {
   .left-sidebar .wrapper {
-    padding-left: 85%;
+    padding-left: $sidebar-width;
   }
   .left-sidebar .wrapper.toggled {
     padding-left: 0;
   }
   .left-sidebar .sidebar-left {
-    left:  85%;
-    width:  85%;
-    margin-left: -85%;
+    left:  $sidebar-width;
+    width:  $sidebar-width;
+    margin-left: -$sidebar-width;
   }
   .content {
     position: absolute;
   }
   .left-sidebar .wrapper.toggled .content {
     position: absolute;
-    margin-right: -85%;
+    margin-right: -$sidebar-width;
   }
 }

@@ -33,6 +33,9 @@ body {
 .btn {
   transition: all 0.2s linear 0s;
 }
+.btn-lg {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
 .btn.active:focus,
 .btn:active:focus,
 .btn:focus,
@@ -76,7 +79,7 @@ tr.attention {
   background-color: $brand-attention;
 }
 .table-hover td {
-  cursor: pointer;
+  //cursor: pointer;
 }
 .table > thead > tr:not(:first-child) > th {
   vertical-align: middle;
@@ -292,6 +295,9 @@ input[type="checkbox"]:disabled:checked:after,
 .list-group-item {
   border-style: dotted none none none;
   border-color: $gray;
+}
+.nav .list-group-item {
+  padding-left: 0;
 }
 .navbar-text {
   display: inline-block;
